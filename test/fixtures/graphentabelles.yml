@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  punkt_1: MyString
+  punkt_2: MyString
+  laenge: 1
+
+two:
+  punkt_1: MyString
+  punkt_2: MyString
+  laenge: 1

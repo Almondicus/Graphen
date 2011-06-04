@@ -1,0 +1,29 @@
+<%= form_for(@graphentabelle) do |f| %>
+  <% if @graphentabelle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@graphentabelle.errors.count, "error") %> prohibited this graphentabelle from being saved:</h2>
+
+      <ul>
+      <% @graphentabelle.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :punkt_1 %><br />
+    <%= f.text_field :punkt_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :punkt_2 %><br />
+    <%= f.text_field :punkt_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :laenge %><br />
+    <%= f.text_field :laenge %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

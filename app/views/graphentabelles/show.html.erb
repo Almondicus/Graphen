@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Punkt 1:</b>
+  <%= @graphentabelle.punkt_1 %>
+</p>
+
+<p>
+  <b>Punkt 2:</b>
+  <%= @graphentabelle.punkt_2 %>
+</p>
+
+<p>
+  <b>Laenge:</b>
+  <%= @graphentabelle.laenge %>
+</p>
+
+
+<%= link_to 'Edit', edit_graphentabelle_path(@graphentabelle) %> |
+<%= link_to 'Back', graphentabelles_path %>

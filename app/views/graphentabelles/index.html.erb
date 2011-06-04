@@ -1,0 +1,27 @@
+<h1>Listing graphentabelles</h1>
+
+<table>
+  <tr>
+    <th>Punkt 1</th>
+    <th>Punkt 2</th>
+    <th>Laenge</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @graphentabelles.each do |graphentabelle| %>
+  <tr>
+    <td><%= graphentabelle.punkt_1 %></td>
+    <td><%= graphentabelle.punkt_2 %></td>
+    <td><%= graphentabelle.laenge %></td>
+    <td><%= link_to 'Show', graphentabelle %></td>
+    <td><%= link_to 'Edit', edit_graphentabelle_path(graphentabelle) %></td>
+    <td><%= link_to 'Destroy', graphentabelle, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Graphentabelle', new_graphentabelle_path %>
